@@ -10,6 +10,10 @@ div {
   background: #ccc;
   border-radius: 40px;
   border: 15px solid #999;
+  position: relative;
+  left: 70px;
+  top: -10px;
+  z-index: -1;
 }
 
 .triangle {
@@ -26,10 +30,33 @@ div {
   border-top: 300px solid #bc6;
   border-left: 75px solid transparent;
   border-right: 75px solid transparent;
-  border-radius: 20px 20px 100px 100px;
+  border-radius: 20px 20px 100px 100px;  
+  position: relative;
+  left: 70px;
 }
 
+/* @keyframes blink {
+  50% {
+    background: radial-gradient(circle, red 15%, transparent 40%), #cc5;
+  }
+}
+
+@-webkit-keyframes blink {
+  50% {
+  background: -webkit-radial-gradient(circle, red 15%, transparent 40%), #cc5;
+}
+}
+
+@-moz-keyframes blink {
+  50% {
+  background: -moz-radial-gradient(circle, red 15%, transparent 40%), #cc5;
+}
+} */
+
 .brain {
+  animation: blink .5s infinite;
+  -webkit-animation: blink .5s infinite;
+  -moz-animation: blink .5s infinite;
   background: #cc5;
   height: 150px;
   width: 150px;
@@ -39,6 +66,8 @@ div {
   background: -moz-radial-gradient(circle, white 15%, transparent 40%), #cc5; 
   background: -webkit-radial-gradient(circle, white 15%, transparent 40%), #cc5;
   background-size: 33% 100%;
+  position: relative;
+  left: 70px;
 }
 
 .beep {
@@ -48,4 +77,39 @@ div {
   border: 5px solid transparent;
   border-top: 10px solid #777;
   border-bottom: 80px solid #888;
+  position: relative;
+  left: 70px;
+}
+
+.robot {
+  position: 0 auto;
+}
+
+.left {
+  font-family: 'Poller One', cursive;
+  font-weight: bold;
+  font-size: 250px;
+  color: #666;
+  transform: rotate(200deg);
+  -webkit-transform: rotate(200deg);
+  -moz-transform: rotate(200deg);
+  position: relative;
+  left: -385px;
+  top: -202px;
+  z-index: -1;
+}
+
+.right {
+  font-family: 'Poller One', cursive;
+  font-weight: bold;
+  font-size: 250px;
+  color: #666;
+  transform: rotate(200deg);
+  -webkit-transform: rotate(200deg);
+  -moz-transform: rotate(200deg);
+  position: relative;
+  right: -230px;
+  top: -350px;
+  z-index: -1;
+  transform: scaleY(-1) rotate(20deg);
 }
