@@ -15,6 +15,12 @@ $('.colour').click(function() {
   var green = Math.floor(Math.random() * 255);
   var blue = Math.floor(Math.random() * 255);
   
-  //Display the number in an alert window
-  alert(red + "," + green + "," + blue);
+  // Generate an RGBA value from red, green, and blue
+  var randomRGBA = 'rgba(' + red + "," + green + "," + blue + ',1)'
+
+  // and change the body's background to our random colour
+  $("body").css("background", randomRGBA);
+  
+  //Display the three values in an alert window
+  // alert(randomRGBA);
 });
