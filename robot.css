@@ -35,7 +35,7 @@ div {
   left: 70px;
 }
 
-/* @keyframes blink {
+@keyframes blink {
   50% {
     background: radial-gradient(circle, red 15%, transparent 40%), #cc5;
   }
@@ -51,12 +51,9 @@ div {
   50% {
   background: -moz-radial-gradient(circle, red 15%, transparent 40%), #cc5;
 }
-} */
+}
 
 .brain {
-  animation: blink .5s infinite;
-  -webkit-animation: blink .5s infinite;
-  -moz-animation: blink .5s infinite;
   background: #cc5;
   height: 150px;
   width: 150px;
@@ -112,4 +109,10 @@ div {
   top: -350px;
   z-index: -1;
   transform: scaleY(-1) rotate(20deg);
+}
+
+.laser {
+  animation: blink .5s infinite;
+  -webkit-animation: blink .5s infinite;
+  -moz-animation: blink .5s infinite;
 }
